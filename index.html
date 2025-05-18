@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard App Mockups</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Flashcard App UI Mockups</h1>
+        <nav>
+            <ul>
+                <li><a href="#flashcard-view">Flashcard View</a></li>
+                <li><a href="#deck-list">Deck List</a></li>
+                <li><a href="#card-editor">Card Editor</a></li>
+                <li><a href="#progress-view">Progress View</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="flashcard-view" class="mockup-section">
+            <h2>Flashcard View</h2>
+            <div class="mockup-container">
+                <div class="flashcard-container">
+                    <div class="progress-indicator">
+                        <div class="progress-text">Card 5 of 20</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 25%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="flashcard" id="demo-card">
+                        <div class="flashcard-front">
+                            <div class="card-content">
+                                <h3>What is the capital of France?</h3>
+                            </div>
+                        </div>
+                        <div class="flashcard-back">
+                            <div class="card-content">
+                                <h3>Paris</h3>
+                                <p>Paris is the capital and most populous city of France.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-actions">
+                        <button class="nav-btn prev-btn">
+                            <span class="btn-icon">←</span>
+                            <span class="btn-text">Previous</span>
+                        </button>
+                        
+                        <div class="response-btns">
+                            <button class="response-btn dont-know-btn">
+                                <span class="btn-icon">✗</span>
+                                <span class="btn-text">Don't Know</span>
+                            </button>
+                            <button class="response-btn know-btn">
+                                <span class="btn-icon">✓</span>
+                                <span class="btn-text">Know</span>
+                            </button>
+                        </div>
+                        
+                        <button class="nav-btn next-btn">
+                            <span class="btn-text">Next</span>
+                            <span class="btn-icon">→</span>
+                        </button>
+                    </div>
+                    
+                    <div class="srs-info">
+                        <div class="srs-box">Box 2</div>
+                        <div class="next-review">Next review: Tomorrow</div>
+                    </div>
+                </div>
+            </div>
+            <div class="mockup-description">
+                <h3>Key Features:</h3>
+                <ul>
+                    <li>Clean, focused card display with clear typography</li>
+                    <li>Smooth 3D flip animation on card click</li>
+                    <li>Prominent "Know" and "Don't Know" buttons with visual cues</li>
+                    <li>Clear navigation with Previous/Next buttons</li>
+                    <li>Progress indicator showing current position in deck</li>
+                    <li>SRS information showing current box and next review date</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="deck-list" class="mockup-section">
+            <h2>Deck List / Library</h2>
+            <div class="mockup-container">
+                <div class="deck-list-container">
+                    <div class="deck-list-header">
+                        <h2>My Decks</h2>
+                        <div class="deck-actions">
+                            <div class="search-container">
+                                <input type="text" placeholder="Search decks..." class="search-input">
+                                <button class="search-btn">🔍</button>
+                            </div>
+                            <button class="create-deck-btn">+ New Deck</button>
+                        </div>
+                    </div>
+                    
+                    <div class="deck-filters">
+                        <button class="filter-btn active">All</button>
+                        <button class="filter-btn">Recent</button>
+                        <button class="filter-btn">Due Today</button>
+                        <button class="filter-btn">Favorites</button>
+                    </div>
+                    
+                    <div class="decks-grid">
+                        <div class="deck-card favorite">
+                            <div class="deck-card-header">
+                                <h3>Spanish Vocabulary</h3>
+                                <button class="favorite-btn">★</button>
+                            </div>
+                            <div class="deck-stats">
+                                <div class="stat">
+                                    <span class="stat-value">120</span>
+                                    <span class="stat-label">Cards</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">15</span>
+                                    <span class="stat-label">Due</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">85%</span>
+                                    <span class="stat-label">Mastered</span>
+                                </div>
+                            </div>
+                            <div class="deck-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="deck-actions">
+                                <button class="study-btn">Study Now</button>
+                                <button class="deck-menu-btn">⋮</button>
+                            </div>
+                        </div>
+                        
+                        <div class="deck-card">
+                            <div class="deck-card-header">
+                                <h3>World Capitals</h3>
+                                <button class="favorite-btn">☆</button>
+                            </div>
+                            <div class="deck-stats">
+                                <div class="stat">
+                                    <span class="stat-value">50</span>
+                                    <span class="stat-label">Cards</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">8</span>
+                                    <span class="stat-label">Due</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">62%</span>
+                                    <span class="stat-label">Mastered</span>
+                                </div>
+                            </div>
+                            <div class="deck-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 62%"></div>
+                                </div>
+                            </div>
+                            <div class="deck-actions">
+                                <button class="study-btn">Study Now</button>
+                                <button class="deck-menu-btn">⋮</button>
+                            </div>
+                        </div>
+                        
+                        <div class="deck-card">
+                            <div class="deck-card-header">
+                                <h3>JavaScript Concepts</h3>
+                                <button class="favorite-btn">☆</button>
+                            </div>
+                            <div class="deck-stats">
+                                <div class="stat">
+                                    <span class="stat-value">75</span>
+                                    <span class="stat-label">Cards</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">20</span>
+                                    <span class="stat-label">Due</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">40%</span>
+                                    <span class="stat-label">Mastered</span>
+                                </div>
+                            </div>
+                            <div class="deck-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 40%"></div>
+                                </div>
+                            </div>
+                            <div class="deck-actions">
+                                <button class="study-btn">Study Now</button>
+                                <button class="deck-menu-btn">⋮</button>
+                            </div>
+                        </div>
+                        
+                        <div class="deck-card new-deck">
+                            <div class="new-deck-content">
+                                <div class="new-deck-icon">+</div>
+                                <div class="new-deck-text">Create New Deck</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mockup-description">
+                <h3>Key Features:</h3>
+                <ul>
+                    <li>Grid layout for easy deck visualization</li>
+                    <li>Search functionality for quick deck access</li>
+                    <li>Filter options to organize decks by different criteria</li>
+                    <li>Visual progress indicators for each deck</li>
+                    <li>Key statistics (total cards, due cards, mastery percentage)</li>
+                    <li>Quick access to study and deck management options</li>
+                    <li>Ability to favorite decks for faster access</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="card-editor" class="mockup-section">
+            <h2>Card Creation/Editing Screen</h2>
+            <div class="mockup-container">
+                <div class="card-editor-container">
+                    <div class="editor-header">
+                        <h2>Edit Card</h2>
+                        <div class="deck-selector">
+                            <label for="deck-select">Deck:</label>
+                            <select id="deck-select">
+                                <option>Spanish Vocabulary</option>
+                                <option>World Capitals</option>
+                                <option>JavaScript Concepts</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="editor-content">
+                        <div class="card-side">
+                            <h3>Front</h3>
+                            <div class="formatting-toolbar">
+                                <button class="format-btn">B</button>
+                                <button class="format-btn"><i>I</i></button>
+                                <button class="format-btn"><u>U</u></button>
+                                <button class="format-btn">List</button>
+                                <button class="format-btn">Code</button>
+                                <button class="format-btn">Image</button>
+                            </div>
+                            <div class="editor-field" contenteditable="true">
+                                What is the capital of France?
+                            </div>
+                        </div>
+                        
+                        <div class="card-side">
+                            <h3>Back</h3>
+                            <div class="formatting-toolbar">
+                                <button class="format-btn">B</button>
+                                <button class="format-btn"><i>I</i></button>
+                                <button class="format-btn"><u>U</u></button>
+                                <button class="format-btn">List</button>
+                                <button class="format-btn">Code</button>
+                                <button class="format-btn">Image</button>
+                            </div>
+                            <div class="editor-field" contenteditable="true">
+                                <p><strong>Paris</strong></p>
+                                <p>Paris is the capital and most populous city of France.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-preview">
+                        <h3>Preview</h3>
+                        <div class="preview-card">
+                            <div class="preview-front">
+                                <div class="preview-content">
+                                    What is the capital of France?
+                                </div>
+                            </div>
+                            <div class="preview-back">
+                                <div class="preview-content">
+                                    <p><strong>Paris</strong></p>
+                                    <p>Paris is the capital and most populous city of France.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="preview-flip-btn">Flip Card</button>
+                    </div>
+                    
+                    <div class="card-tags">
+                        <h3>Tags</h3>
+                        <div class="tags-container">
+                            <div class="tag">Geography</div>
+                            <div class="tag">Europe</div>
+                            <div class="tag">Capitals</div>
+                            <div class="tag-input-container">
+                                <input type="text" placeholder="Add tag..." class="tag-input">
+                                <button class="add-tag-btn">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="editor-actions">
+                        <button class="cancel-btn">Cancel</button>
+                        <div class="right-actions">
+                            <button class="save-btn">Save</button>
+                            <button class="save-new-btn">Save & Add Another</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mockup-description">
+                <h3>Key Features:</h3>
+                <ul>
+                    <li>Rich text formatting options for both front and back</li>
+                    <li>Real-time preview of how the card will appear</li>
+                    <li>Deck selection for easy organization</li>
+                    <li>Tagging system for more granular organization</li>
+                    <li>Multiple save options (Save, Save & Add Another)</li>
+                    <li>Support for adding code snippets and images</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="progress-view" class="mockup-section">
+            <h2>Progress/Overview Screen</h2>
+            <div class="mockup-container">
+                <div class="progress-container">
+                    <div class="progress-header">
+                        <h2>My Learning Progress</h2>
+                        <div class="time-filter">
+                            <button class="time-btn active">Week</button>
+                            <button class="time-btn">Month</button>
+                            <button class="time-btn">Year</button>
+                            <button class="time-btn">All Time</button>
+                        </div>
+                    </div>
+                    
+                    <div class="stats-overview">
+                        <div class="stat-card">
+                            <div class="stat-icon">🔥</div>
+                            <div class="stat-value">12</div>
+                            <div class="stat-label">Day Streak</div>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-icon">✓</div>
+                            <div class="stat-value">245</div>
+                            <div class="stat-label">Cards Mastered</div>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-icon">📚</div>
+                            <div class="stat-value">8</div>
+                            <div class="stat-label">Active Decks</div>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-icon">⏱️</div>
+                            <div class="stat-value">32</div>
+                            <div class="stat-label">Due Today</div>
+                        </div>
+                    </div>
+                    
+                    <div class="activity-chart">
+                        <h3>Study Activity</h3>
+                        <div class="chart-container">
+                            <div class="chart-y-axis">
+                                <div class="y-label">50</div>
+                                <div class="y-label">40</div>
+                                <div class="y-label">30</div>
+                                <div class="y-label">20</div>
+                                <div class="y-label">10</div>
+                                <div class="y-label">0</div>
+                            </div>
+                            <div class="chart-bars">
+                                <div class="chart-bar">
+                                    <div class="bar-fill" style="height: 60%"></div>
+                                    <div class="bar-label">Mon</div>
+                                </div>
+                                <div class="chart-bar">
+                                    <div class="bar-fill" style="height: 80%"></div>
+                                    <div class="bar-label">Tue</div>
+                                </div>
+                                <div class="chart-bar">
+                                    <div class="bar-fill" style="height: 40%"></div>
+                                    <div class="bar-label">Wed</div>
+                                </div>
+                                <div class="chart-bar">
+                                    <div class="bar-fill" style="height: 70%"></div>
+                                    <div class="bar-label">Thu</div>
+                                </div>
+                                <div class="chart-bar">
+                                    <div class="bar-fill" style="height: 90%"></div>
+                                    <div class="bar-label">Fri</div>
+                                </div>
+                                <div class="chart-bar">
+                                    <div class="bar-fill" style="height: 30%"></div>
+                                    <div class="bar-label">Sat</div>
+                                </div>
+                                <div class="chart-bar">
+                                    <div class="bar-fill" style="height: 50%"></div>
+                                    <div class="bar-label">Sun</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="achievements-section">
+                        <h3>Recent Achievements</h3>
+                        <div class="achievements-grid">
+                            <div class="achievement-card">
+                                <div class="achievement-icon">🏆</div>
+                                <div class="achievement-title">10-Day Streak</div>
+                                <div class="achievement-date">Earned 2 days ago</div>
+                            </div>
+                            
+                            <div class="achievement-card">
+                                <div class="achievement-icon">🌟</div>
+                                <div class="achievement-title">Deck Master</div>
+                                <div class="achievement-date">Earned 1 week ago</div>
+                            </div>
+                            
+                            <div class="achievement-card">
+                                <div class="achievement-icon">🚀</div>
+                                <div class="achievement-title">Quick Learner</div>
+                                <div class="achievement-date">Earned 2 weeks ago</div>
+                            </div>
+                            
+                            <div class="achievement-card locked">
+                                <div class="achievement-icon">🔒</div>
+                                <div class="achievement-title">Memory Champion</div>
+                                <div class="achievement-date">Master 500 cards</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mockup-description">
+                <h3>Key Features:</h3>
+                <ul>
+                    <li>Visual streak counter to motivate daily study</li>
+                    <li>Key statistics overview (mastered cards, active decks, due cards)</li>
+                    <li>Activity chart showing study patterns over time</li>
+                    <li>Achievement system with unlockable badges</li>
+                    <li>Time-based filtering for progress tracking</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Flashcard Application UI Mockups - Interactive Wireframes</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
